@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="从云" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        PALI:Set!｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2018/10/24/PALI-Set/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    从云
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>PALI:Set!</h1>
+                    
+                    <span class="meta">
+                         作者 从云
+                        <span>
+                          日期 2018-10-24
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            PALI:Set!
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>基于 <a href="https://lotuc.gitbooks.io/plai-cn/content/chap8.html" target="_blank" rel="noopener">PALI-8</a><br>增加 二叉树，及基于此的链表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br></pre></td><td class="code"><pre><span class="line">#lang plai-typed</span><br><span class="line"></span><br><span class="line">;;Inner Expression</span><br><span class="line">(define-type Expr</span><br><span class="line">  [Nmb  (n : number)]</span><br><span class="line">  [Add  (l : Expr) (r : Expr)]                            </span><br><span class="line">  [Lambda (para : symbol) (body : Expr)]</span><br><span class="line">  [Apply  (fun : Expr) (argu : Expr)]</span><br><span class="line">  ;;var</span><br><span class="line">  [Var  (e : symbol)]</span><br><span class="line">  [Set!  (var : symbol) (new : Expr)]</span><br><span class="line">  ;;ref</span><br><span class="line">  [MkRef (sth : Expr)]</span><br><span class="line">  [UnRef (ref : Expr)]</span><br><span class="line">  [SetRef! (ref : Expr) (new : Expr)]</span><br><span class="line">  ;;cons</span><br><span class="line">  [Cons  (first : Expr) (rest : Expr)]</span><br><span class="line">  [Car   (pair : Expr)]</span><br><span class="line">  [Cdr   (pair : Expr)]</span><br><span class="line">  [Nil])</span><br><span class="line"></span><br><span class="line">(define-type Value</span><br><span class="line">  [NmbV    (n : number)]</span><br><span class="line">  [Closure (para : symbol) (body : Expr) (env : Env)]</span><br><span class="line">  [Ref     (loc : Location)]</span><br><span class="line">  [Pair    (first : Value) (rest : Value)]</span><br><span class="line">  [None])</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">(define-type Result</span><br><span class="line">  [V&amp;R  (value : Value) (store : Store)])</span><br><span class="line"></span><br><span class="line">(define (add [value-l : Value] [value-r : Value]) : Value</span><br><span class="line">  (NmbV (+ (NmbV-n value-l) (NmbV-n value-r))))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">;;;Map</span><br><span class="line">(define-type-alias Location number)</span><br><span class="line"></span><br><span class="line">(define new-loc</span><br><span class="line">  (let ([iter 0])</span><br><span class="line">    (lambda ()</span><br><span class="line">      (begin</span><br><span class="line">       (set! iter (+ 1 iter))</span><br><span class="line">       iter))))</span><br><span class="line"></span><br><span class="line">;;Environment</span><br><span class="line">(define-type Binding</span><br><span class="line">  [Bind  (var : symbol) (loc : Location)])</span><br><span class="line"></span><br><span class="line">(define-type-alias Env [listof Binding])</span><br><span class="line"></span><br><span class="line">(define globle-env empty)</span><br><span class="line"></span><br><span class="line">(define extend-env cons)</span><br><span class="line"></span><br><span class="line">(define (var-&gt;loc [var : symbol] [env : Env]) : Location</span><br><span class="line">  (cond</span><br><span class="line">    [(empty? env) (error &apos;var-&gt;loc &quot;No such binding&quot;)]</span><br><span class="line">    [(equal? var (Bind-var (first env))) (Bind-loc (first env))]</span><br><span class="line">    [else   (var-&gt;loc var (rest env))]))</span><br><span class="line"></span><br><span class="line">;;Storage</span><br><span class="line">(define-type Storage</span><br><span class="line">  [Point (loc : Location) (value : Value)])</span><br><span class="line"></span><br><span class="line">(define-type-alias Store [listof Storage])</span><br><span class="line"></span><br><span class="line">(define init-store empty)</span><br><span class="line"></span><br><span class="line">(define extend-store cons)</span><br><span class="line"></span><br><span class="line">(define (loc-&gt;value [loc : Location] [store : Store]) : Value</span><br><span class="line">  (cond</span><br><span class="line">    [(empty? store) (error &apos;loc-&gt;vlaue &quot;No such storage&quot;)]</span><br><span class="line">    [(equal? loc (Point-loc (first store))) (Point-value (first store))]</span><br><span class="line">    [else   (loc-&gt;value loc (rest store))]))</span><br><span class="line"></span><br><span class="line">(define (fresh-store [loc : Location] [value : Value] [store : Store]) : Store</span><br><span class="line">  (cond</span><br><span class="line">    [(equal? loc (Point-loc (first store)))</span><br><span class="line">     (cons (Point loc value)</span><br><span class="line">           (rest store))]</span><br><span class="line">    [else (cons (first store)</span><br><span class="line">                (fresh-store loc value (rest store)))]))</span><br><span class="line"></span><br><span class="line">;;;interp</span><br><span class="line">(define (interp [expr : Expr] [env : Env] [store : Store]) : Result</span><br><span class="line">  (type-case Expr expr</span><br><span class="line">    [Nmb   (n)   (V&amp;R (NmbV n) store)]</span><br><span class="line">    [Var     (var) (V&amp;R (loc-&gt;value (var-&gt;loc var env) store) store)]</span><br><span class="line">    [Set!    (var new) (type-case Result (interp new env store)</span><br><span class="line">                         [V&amp;R  (value-new store-new)</span><br><span class="line">                               (let ([where (var-&gt;loc var env)])</span><br><span class="line">                                 (V&amp;R  value-new</span><br><span class="line">                                       (fresh-store where value-new store-new)))])]</span><br><span class="line">                        </span><br><span class="line">    [Lambda (para body)  (V&amp;R (Closure para body env) store)]</span><br><span class="line">    </span><br><span class="line">    [Apply  (fun argu)  (type-case Result (interp fun env store)</span><br><span class="line">                          [V&amp;R  (value-fun store-fun)</span><br><span class="line">                                (type-case Result (interp argu env store-fun)</span><br><span class="line">                                  [V&amp;R  (value-argu store-argu)</span><br><span class="line">                                        (let ([loc* (new-loc)])</span><br><span class="line">                                          (interp (Closure-body value-fun)</span><br><span class="line">                                                (extend-env   (Bind (Closure-para value-fun)</span><br><span class="line">                                                                    loc*)</span><br><span class="line">                                                              (Closure-env value-fun))</span><br><span class="line">                                                (extend-store (Point loc*</span><br><span class="line">                                                                     value-argu)</span><br><span class="line">                                                              store-argu)))])])]</span><br><span class="line">    </span><br><span class="line">    [MkRef   (expr)   (type-case Result (interp expr env store)</span><br><span class="line">                        [V&amp;R (value-expr store-expr)</span><br><span class="line">                             (let ([where (new-loc)])</span><br><span class="line">                               (V&amp;R  (Ref where)</span><br><span class="line">                                     (extend-store (Point where value-expr)</span><br><span class="line">                                                   store-expr)))])]</span><br><span class="line">    </span><br><span class="line">    [UnRef   (ref)     (type-case Result (interp ref env store)</span><br><span class="line">                         [V&amp;R  (value-ref store-ref)</span><br><span class="line">                               (V&amp;R (loc-&gt;value (Ref-loc value-ref) store)</span><br><span class="line">                                    store-ref)])]</span><br><span class="line">    </span><br><span class="line">    [SetRef! (ref new) (type-case Result (interp ref env store)</span><br><span class="line">                         [V&amp;R  (value-ref store-ref)</span><br><span class="line">                               (type-case Result (interp new env store-ref)</span><br><span class="line">                                 [V&amp;R (value-new store-new)</span><br><span class="line">                                  (let ([where (new-loc)])</span><br><span class="line">                                    (V&amp;R value-new</span><br><span class="line">                                         (extend-store (Point where value-new)</span><br><span class="line">                                                       (fresh-store where value-new store-new))))])])]</span><br><span class="line">    </span><br><span class="line">    [Add   (l r)      (type-case Result (interp l env store)</span><br><span class="line">                        [V&amp;R  (value-l store-l)</span><br><span class="line">                              (type-case Result (interp r env store-l)</span><br><span class="line">                                [V&amp;R (value-r store-r)</span><br><span class="line">                                     (V&amp;R  (add value-l value-r)</span><br><span class="line">                                           store-r)])])]</span><br><span class="line">    [Cons (l r)       (type-case Result (interp l env store)</span><br><span class="line">                        [V&amp;R  (value-l store-l)</span><br><span class="line">                              (type-case Result (interp r env store-l)</span><br><span class="line">                                [V&amp;R (value-r store-r)</span><br><span class="line">                                     (V&amp;R (Pair value-l value-r)</span><br><span class="line">                                          store-r)])])]</span><br><span class="line">    [Car (pair)      (type-case Result (interp pair env store)</span><br><span class="line">                        [V&amp;R  (value-pair store-pair)</span><br><span class="line">                              (V&amp;R (Pair-first value-pair)</span><br><span class="line">                                   store-pair)])]</span><br><span class="line">    [Cdr  (pair)     (type-case Result (interp pair env store)</span><br><span class="line">                        [V&amp;R  (value-pair store-pair)</span><br><span class="line">                              (V&amp;R (Pair-rest  value-pair)</span><br><span class="line">                                   store-pair)])]</span><br><span class="line">    [Nil  ()         (V&amp;R (None)</span><br><span class="line">                          store)]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(define (prase [expr : s-expression]) : Expr</span><br><span class="line">  (cond</span><br><span class="line">    [(s-exp-number? expr) (Nmb (s-exp-&gt;number expr))]</span><br><span class="line">    [(s-exp-symbol? expr) (Var (s-exp-&gt;symbol expr))]</span><br><span class="line">    [(s-exp-list? expr)</span><br><span class="line">     (let ([expr-list (s-exp-&gt;list expr)])</span><br><span class="line">       (cond</span><br><span class="line">         [(s-exp-list? (first expr-list))</span><br><span class="line">          (Apply (prase (first  expr-list))</span><br><span class="line">                 (prase (second expr-list)))]</span><br><span class="line">         [else (case (s-exp-&gt;symbol (first expr-list))</span><br><span class="line">                 [(lambda) (Lambda (s-exp-&gt;symbol (second expr-list))</span><br><span class="line">                                   (prase (third expr-list)))]</span><br><span class="line">                 [(+)      (Add (prase (second expr-list))</span><br><span class="line">                                (prase (third  expr-list)))]</span><br><span class="line">                 ;;desugre-while-prase</span><br><span class="line">                 [(let)    (let ([bind (s-exp-&gt;list (second expr-list))]</span><br><span class="line">                                [in   (prase (third expr-list))])</span><br><span class="line">                            (let ([var  (s-exp-&gt;symbol (first bind))]</span><br><span class="line">                                  [expr (prase (second bind))])</span><br><span class="line">                              (Apply (Lambda var in)</span><br><span class="line">                                     expr)))]</span><br><span class="line">                 [(begin)  (let ([first (prase (second expr-list))]</span><br><span class="line">                                 [then  (prase (third  expr-list))])</span><br><span class="line">                             (Apply (Lambda &apos;Nil then)</span><br><span class="line">                                    first))]</span><br><span class="line">                 [(list)   (letrec ([cons-list (rest expr-list)]</span><br><span class="line">                                    [prase* (lambda (l) (cond</span><br><span class="line">                                                          [(empty? l) (Nil)]</span><br><span class="line">                                                          [else (Cons (prase  (first cons-list))</span><br><span class="line">                                                                      (prase* (rest  cons-list)))]))])</span><br><span class="line">                             (prase* cons-list))]</span><br><span class="line">                            </span><br><span class="line">                 ;;list</span><br><span class="line">                 [(cons)   (Cons (prase (second expr-list))</span><br><span class="line">                                 (prase (third  expr-list)))]</span><br><span class="line">                 [(car)    (Car  (prase (second expr-list)))]</span><br><span class="line">                 [(cdr)    (Cdr  (prase (second expr-list)))]</span><br><span class="line">                 [(nil)    (Nil)]</span><br><span class="line">                 </span><br><span class="line">                 ;;ref&amp;set</span><br><span class="line">                 [(ref)     (MkRef   (prase (second expr-list)))]</span><br><span class="line">                 [(unref)   (UnRef   (prase (second expr-list)))]</span><br><span class="line">                 [(setref!) (SetRef! (prase (second expr-list))</span><br><span class="line">                                     (prase (third  expr-list)))]</span><br><span class="line">                 [(set!)    (Set!    (s-exp-&gt;symbol (second expr-list))</span><br><span class="line">                                     (prase (third  expr-list)))])]))]))</span><br><span class="line"></span><br><span class="line">(define (eval [expr : s-expression])</span><br><span class="line">  (type-case Result (interp (prase expr) globle-env init-store)</span><br><span class="line">    [V&amp;R (value store)</span><br><span class="line">         value]))</span><br></pre></td></tr></table></figure>
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/10/17/PLAI-The-first-try/" data-toggle="tooltip" data-placement="top"
+                           title="PLAI:The first try">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 从云 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
+</body>
+
+</html>
